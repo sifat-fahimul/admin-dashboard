@@ -16,7 +16,7 @@ const Signup = () => {
   return (
     <div className=" bg-gray-100 w-full h-screen flex align-middle justify-center">
       <div className="bg-white border w-80 m-auto p-4 rounded-lg">
-        <h3>Sign Up</h3>
+        <h3>Create an Account</h3>
         <div className="flex min-h-full items-center justify-center py-12 px-4 sm:px-6 lg:px-8">
           <div className="w-full max-w-md space-y-8">
             <form className="mt-2 space-y-6" onSubmit={handleLogin}>

@@ -1,12 +1,20 @@
 import {
   MenuFoldOutlined,
   MenuUnfoldOutlined,
-  UploadOutlined,
   UserOutlined,
-  VideoCameraOutlined,
 } from "@ant-design/icons";
+import {
+  AiOutlineDashboard,
+  AiOutlineShoppingCart,
+  AiOutlineUserAdd,
+} from "react-icons/ai";
+import { BsCardChecklist } from "react-icons/bs";
+import { FaShoppingBag } from "react-icons/fa";
+import { MdAddShoppingCart } from "react-icons/md";
+import { CgUserList } from "react-icons/cg";
 import { Layout, Menu, theme } from "antd";
 import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
 const { Header, Sider, Content } = Layout;
 
 const MainLayout = () => {
@@ -14,6 +22,7 @@ const MainLayout = () => {
   const {
     token: { colorBgContainer },
   } = theme.useToken();
+  const navigate = useNavigate();
   return (
     <Layout>
       <Sider trigger={null} collapsible collapsed={collapsed}>
@@ -21,22 +30,57 @@ const MainLayout = () => {
         <Menu
           theme="dark"
           mode="inline"
-          defaultSelectedKeys={["1"]}
+          defaultSelectedKeys={[""]}
+          onClick={({ key }) => {
+            if (key == "signout") {
+            } else {
+              navigate(key);
+            }
+          }}
           items={[
             {
-              key: "1",
-              icon: <UserOutlined />,
-              label: "nav 1",
+              key: "",
+              icon: <AiOutlineDashboard className="!text-xl" />,
+              label: "Dashboard",
             },
             {
-              key: "2",
-              icon: <VideoCameraOutlined />,
-              label: "nav 2",
+              key: "customers",
+              icon: <UserOutlined className="!text-xl" />,
+              label: "Customers",
+              children: [
+                {
+                  key: "add-customers",
+                  icon: <AiOutlineUserAdd className="!text-xl" />,
+                  label: "Add Customers",
+                },
+                {
+                  key: "customers-list",
+                  icon: <CgUserList className="!text-xl" />,
+                  label: "Customers List",
+                },
+              ],
             },
             {
-              key: "3",
-              icon: <UploadOutlined />,
-              label: "nav 3",
+              key: "products",
+              icon: <FaShoppingBag className="!text-xl" />,
+              label: "Products",
+              children: [
+                {
+                  key: "product-list",
+                  icon: <BsCardChecklist className="!text-xl" />,
+                  label: "Products List",
+                },
+                {
+                  key: "add-product",
+                  icon: <MdAddShoppingCart className="!text-xl" />,
+                  label: "Add Products",
+                },
+              ],
+            },
+            {
+              key: "order-list",
+              icon: <AiOutlineShoppingCart className="!text-xl" />,
+              label: "Order List",
             },
           ]}
         />
