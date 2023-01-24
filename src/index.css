@@ -10,6 +10,10 @@
     }
   }
 
+  main{
+    overflow-y: scroll;
+  }
+
   .trigger {
     padding: 0 24px;
     font-size: 18px;
@@ -31,3 +35,39 @@
   .ant-layout{
     min-height: 100vh;
   }
+  .ant-layout-sider-collapsed{
+    flex: 0 0 60px !important;
+    max-width: 60px !important;
+    min-width: 60px !important;
+    width: 60px !important;
+  }
+  .logo{
+    height: 38px !important;
+  }
+  .sm-logo{
+    display: none;
+  }
+  .ant-layout-sider-collapsed .sm-logo{
+    display: block;
+  }
+  .ant-layout-sider-collapsed .lg-logo{
+    display: none;
+  }
+
+  .ant-layout-header h5{
+    line-height: 20px;
+    font-style: 14px;
+  }
+  .ant-layout-header p{
+    line-height: 20px;
+    font-style: 13px;
+  }
+
+  .ant-layout-header div .badge{
+    top: 16px;
+    right: -6px;
+  }
+  .ant-layout-content::-webkit-scrollbar{
+    display: none;
+  }
+ 
