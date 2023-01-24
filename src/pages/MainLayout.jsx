@@ -5,6 +5,7 @@ import {
 } from "@ant-design/icons";
 import {
   AiOutlineDashboard,
+  AiOutlineLogout,
   AiOutlineShoppingCart,
   AiOutlineUserAdd,
 } from "react-icons/ai";
@@ -12,7 +13,6 @@ import { BsCardChecklist } from "react-icons/bs";
 import { FaShoppingBag } from "react-icons/fa";
 import { MdAddShoppingCart } from "react-icons/md";
 import { CgUserList } from "react-icons/cg";
-import { IoMdNotificationsOutline } from "react-icons/io";
 import { Layout, Menu, theme } from "antd";
 import React, { useState } from "react";
 import { Outlet, useNavigate } from "react-router-dom";
@@ -39,6 +39,7 @@ const MainLayout = () => {
           defaultSelectedKeys={[""]}
           onClick={({ key }) => {
             if (key == "signout") {
+              navigate("/");
             } else {
               navigate(key);
             }
@@ -87,6 +88,11 @@ const MainLayout = () => {
               key: "order-list",
               icon: <AiOutlineShoppingCart className="!text-xl" />,
               label: "Order List",
+            },
+            {
+              key: "signout",
+              icon: <AiOutlineLogout className="!text-xl" />,
+              label: "Sign Out",
             },
           ]}
         />

@@ -9,15 +9,6 @@ const columns = [
     render: (_, { seller }) => (
       <>
         {seller.map((seller) => {
-          let color =
-            status == "Pending"
-              ? "geekblue"
-              : status == "Canceled"
-              ? "red"
-              : "green";
-          //   if (status === "loser") {
-          //     color = "volcano";
-          //   }
           return (
             <div key={seller.seller_id}>
               <div className="flex gap-4">
@@ -214,29 +205,33 @@ const CustomerList = () => {
             placeholder="Search..."
           />
           <div className="flex gap-4 w-80">
-            <select
-              className="form-select outline-none border-none  px-4 py-3 rounded bg-gray-200 text-gray-500 flex-grow "
-              name=""
-              id=""
-            >
-              <option value="Status" className="">
-                Status
-              </option>
-              <option value="Active">Active</option>
-              <option value="Disable">Disable</option>
-              <option value="Show all">Show all</option>
-            </select>
-            <select
-              className="form-select outline-none border-none px-4 py-3 rounded bg-gray-200 text-gray-500 flex-grow "
-              name=""
-              id=""
-            >
-              <option value="Show 20" className="">
-                Show 20
-              </option>
-              <option value="Show 30">Show 30</option>
-              <option value="Show 40">Show 40</option>
-            </select>
+            <div className="rounded bg-gray-200 text-gray-500 flex-grow pr-3">
+              <select
+                className=" form-select outline-none border-none w-full h-full px-4 py-3 rounded bg-gray-200 text-gray-500 flex-grow "
+                name=""
+                id=""
+              >
+                <option value="Status" className="">
+                  Status
+                </option>
+                <option value="Active">Active</option>
+                <option value="Disable">Disable</option>
+                <option value="Show all">Show all</option>
+              </select>
+            </div>
+            <div className="rounded bg-gray-200 text-gray-500 flex-grow pr-3">
+              <select
+                className=" form-select outline-none border-none w-full h-full px-4 py-3 rounded bg-gray-200 text-gray-500 flex-grow "
+                name=""
+                id=""
+              >
+                <option value="Show 20" className="">
+                  Show 20
+                </option>
+                <option value="Show 30">Show 30</option>
+                <option value="Show 40">Show 40</option>
+              </select>
+            </div>
           </div>
         </div>
         <hr className="" />
