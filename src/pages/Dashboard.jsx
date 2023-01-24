@@ -4,6 +4,7 @@ import { CgList } from "react-icons/cg";
 import { MdLocalShipping } from "react-icons/md";
 import { Column } from "@ant-design/plots";
 import PieChart from "../components/PieChart";
+import LatestOrderTable from "../components/LatestOrderTable";
 
 const cardData = [
   {
@@ -152,12 +153,16 @@ const Dashboard = () => {
             <Column {...config} />
           </div>
         </div>
-        <div className="1/3 bg-white p-7 rounded-md">
+        <div className="1/3 bg-white p-7 rounded-md h-fit">
           <h1 className="text-2xl mb-7">Revenue Base</h1>
-          <div className="w-72">
+          <div className="w-64 h-fit">
             <PieChart />
           </div>
         </div>
+      </div>
+
+      <div>
+        <LatestOrderTable />
       </div>
     </div>
   );
