@@ -49,9 +49,7 @@ const columns = [
       <>
         {status.map((status) => {
           let color = status == "InActive" ? "coral" : "green";
-          //   if (status === "loser") {
-          //     color = "volcano";
-          //   }
+
           return (
             <Tag color={color} key={status}>
               {status.toUpperCase()}
@@ -185,11 +183,7 @@ const CustomerList = () => {
     <div className="bg-gray-100 w-full h-screen">
       <div className="flex justify-between">
         <h1 className="text-4xl">Customer List</h1>
-        {/* <input
-          className="pl-3 placeholder:text-xs placeholder:text-gray-400 rounded outline-none border-none"
-          type="text"
-          placeholder="Search order ID"
-        /> */}
+
         <Link
           to="/admin/add-customers"
           className="bg-indigo-600 hover:bg-indigo-700 px-5 rounded text-white font-bold uppercase"

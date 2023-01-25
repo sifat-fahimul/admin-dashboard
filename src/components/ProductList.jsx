@@ -1,5 +1,5 @@
 import React from "react";
-import { Button, Space, Table, Tag } from "antd";
+import { Space, Table, Tag } from "antd";
 import { useState } from "react";
 import { Link } from "react-router-dom";
 const columns = [
@@ -48,9 +48,7 @@ const columns = [
       <>
         {status.map((status) => {
           let color = status == "InActive" ? "coral" : "green";
-          //   if (status === "loser") {
-          //     color = "volcano";
-          //   }
+
           return (
             <Tag color={color} key={status}>
               {status.toUpperCase()}
@@ -239,9 +237,7 @@ const ProductList = () => {
             <input
               className="flex-grow pl-3 placeholder:text-xs placeholder:text-gray-500 bg-gray-200 rounded outline-none border-none"
               type="date"
-              // placeholder="Search..."
             />
-            {/* <div className="rounded bg-gray-200 text-gray-500 flex-grow pr-3"> </div> */}
             <div className="rounded bg-gray-200 text-gray-500 flex-grow pr-3">
               <select
                 className=" form-select outline-none border-none w-full h-full px-4 py-3 rounded bg-gray-200 text-gray-500 flex-grow "
