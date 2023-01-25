@@ -33,7 +33,7 @@
   }
 
   .ant-layout{
-    min-height: 100vh;
+    height: 100vh;
   }
   .ant-layout-sider-collapsed{
     flex: 0 0 60px !important;

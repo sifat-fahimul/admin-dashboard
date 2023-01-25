@@ -55,7 +55,7 @@ const Signup = () => {
 
                 <div>
                   <label htmlFor="password" className="text-xs text-gray-400">
-                    Create Password dd
+                    Create Password
                   </label>
                   <input
                     onChange={(e) => setInputPass(e.target.value)}

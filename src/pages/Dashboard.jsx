@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { AiOutlineAreaChart, AiOutlineDollarCircle } from "react-icons/ai";
 import { CgList } from "react-icons/cg";
 import { MdLocalShipping } from "react-icons/md";
@@ -117,13 +118,12 @@ const Dashboard = () => {
     <div className="bg-gray-100 w-full h-screen">
       <div className="flex justify-between">
         <h1 className="text-4xl">Dashboard</h1>
-        <button
-          type="submit"
-          className=" rounded-md border border-transparent bg-indigo-600 px-7 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
+        <Link
+          to=""
+          className=" rounded-md bg-indigo-600 pt-1 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >
-          <span className="text-xl pr-3">+</span>
-          Create Report
-        </button>
+          <span className="text-xl m-0 pr-3">+</span> Create new
+        </Link>
       </div>
       <div className="flex gap-3 my-9">
         {cardData.map((data, i) => {

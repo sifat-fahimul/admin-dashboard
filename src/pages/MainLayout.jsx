@@ -129,7 +129,7 @@ const MainLayout = () => {
                 />
               </div>
               <div>
-                <h5 className="mb-0">user name</h5>
+                <h5 className="mb-0 mt-2">user name</h5>
                 <p className="mb-0">example@gmail.com</p>
               </div>
             </div>

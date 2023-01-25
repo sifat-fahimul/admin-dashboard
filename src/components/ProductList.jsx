@@ -199,7 +199,7 @@ const ProductList = () => {
   };
   const hasSelected = selectedRowKeys.length > 0;
   return (
-    <div className="bg-gray-100 w-full h-screen">
+    <div className="bg-gray-100 w-full">
       <div className="flex justify-between">
         <h1 className="text-4xl">Product List</h1>
         <div className="flex gap-4 w-80  ">

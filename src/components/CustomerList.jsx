@@ -180,13 +180,13 @@ const data = [
 ];
 const CustomerList = () => {
   return (
-    <div className="bg-gray-100 w-full h-screen">
+    <div className="bg-gray-100 w-full ">
       <div className="flex justify-between">
         <h1 className="text-4xl">Customer List</h1>
 
         <Link
           to="/admin/add-customers"
-          className="bg-indigo-600 hover:bg-indigo-700 px-5 rounded text-white font-bold uppercase"
+          className=" rounded-md bg-indigo-600 pt-1 px-4 text-sm font-medium text-white hover:bg-indigo-700 focus:outline-none focus:ring-2 focus:ring-indigo-500 focus:ring-offset-2"
         >
           <span className="text-xl m-0 pr-3">+</span> Create new
         </Link>
