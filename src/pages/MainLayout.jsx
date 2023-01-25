@@ -56,14 +56,14 @@ const MainLayout = () => {
               label: "Customers",
               children: [
                 {
-                  key: "add-customers",
-                  icon: <AiOutlineUserAdd className="!text-xl" />,
-                  label: "Add Customers",
-                },
-                {
                   key: "customers-list",
                   icon: <CgUserList className="!text-xl" />,
                   label: "Customers List",
+                },
+                {
+                  key: "add-customers",
+                  icon: <AiOutlineUserAdd className="!text-xl" />,
+                  label: "Add Customers",
                 },
               ],
             },

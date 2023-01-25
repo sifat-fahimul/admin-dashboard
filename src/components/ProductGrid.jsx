@@ -166,10 +166,7 @@ const ProductGrid = () => {
         <div className="grid grid-cols-4 gap-4 ">
           {data.map((e) => {
             return (
-              <div
-                className="border-gray-300 border border rounded-lg "
-                key={e.key}
-              >
+              <div className="border-gray-300 border rounded-lg " key={e.key}>
                 <div>
                   <img
                     className="w-fit h-fit rounded-t-lg "
