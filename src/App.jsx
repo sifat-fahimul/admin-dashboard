@@ -10,6 +10,7 @@ import CustomerList from "./components/CustomerList";
 import OrderList from "./components/OrderList";
 import ProductList from "./components/ProductList";
 import AddProduct from "./components/AddProduct";
+import ProductGrid from "./components/ProductGrid";
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
           <Route path="/admin/add-customers" element={<AddCustomer />} />
           <Route path="/admin/customers-list" element={<CustomerList />} />
           <Route path="/admin/product-list" element={<ProductList />} />
+          <Route path="/admin/product-grid" element={<ProductGrid />} />
           <Route path="/admin/add-product" element={<AddProduct />} />
           <Route path="/admin/order-list" element={<OrderList />} />
         </Route>

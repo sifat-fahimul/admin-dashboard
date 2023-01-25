@@ -9,7 +9,7 @@ import {
   AiOutlineShoppingCart,
   AiOutlineUserAdd,
 } from "react-icons/ai";
-import { BsCardChecklist } from "react-icons/bs";
+import { BsCardChecklist, BsTable } from "react-icons/bs";
 import { FaShoppingBag } from "react-icons/fa";
 import { MdAddShoppingCart } from "react-icons/md";
 import { CgUserList } from "react-icons/cg";
@@ -78,6 +78,11 @@ const MainLayout = () => {
                   label: "Products List",
                 },
                 {
+                  key: "product-grid",
+                  icon: <BsTable className="!text-xl" />,
+                  label: "Products Grid",
+                },
+                {
                   key: "add-product",
                   icon: <MdAddShoppingCart className="!text-xl" />,
                   label: "Add Products",
@@ -113,12 +118,6 @@ const MainLayout = () => {
             }
           )}
           <div className="pr-6 flex gap-3 align-middle ">
-            {/* <div className="relative">
-              <IoMdNotificationsOutline className="!text-2xl" />
-              <span className="badge bg-yellow-400 h-5 w-5 rounded-full p-2 absolute">
-                4
-              </span>
-            </div> */}
             <div className="flex gap-3 align-middle">
               <div>
                 <img
