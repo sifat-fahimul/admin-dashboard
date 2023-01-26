@@ -1,6 +1,24 @@
 # Admin Dashboard for E-commerce, with React Js.
 
-visit with the [Live Link ](https://admin-dashboard-v01.netlify.app/).
+## visit with the [Live Link ](https://admin-dashboard-v01.netlify.app/).
+
+## Feature in the app
+
+- it has many pages
+
+  - login page
+  - register page
+  - dashboard page
+  - 404 error page
+
+- in dashboard page has so many component
+  - dashboard overview (admin can see his full overview in the component with cards graph and table. )
+  - in customer-list components (admin can see all customers and there activity.)
+  - in add-customer components (admin can add new customer.)
+  - in product-list components (admin can see product view in table and from here he/she also can edit and delete product.)
+  - in product-grid components (admin can see product in card-view and from here he/she also can edit and delete product.)
+  - in add-product components (admin can add new product and upload product image.)
+  - in order-list components (admin can see orders view in table and from here he/she can see status of order also can delete product.)
 
 ## uses library
 
