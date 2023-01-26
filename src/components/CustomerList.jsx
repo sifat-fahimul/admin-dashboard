@@ -21,7 +21,7 @@ const columns = [
                 />
 
                 <div>
-                  <a href="">
+                  <a href="#">
                     <p className="text-lg">{seller.name}</p>
                   </a>
                   <p className="text-xs text-gray-400">
