@@ -30,12 +30,10 @@ npm install -D tailwindcss postcss autoprefixer
 npx tailwindcss init -p
 
 ```
-
-```
 add the code in 'tailwind.config.cjs'
-
 ----------------------------------
 
+```
 module.exports = {
   content: [
     "./index.html",
@@ -47,11 +45,9 @@ module.exports = {
   plugins: [],
 }
 ```
-
-```
 also add the code in 'index.css'
 -------------------------------
-
+```
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
